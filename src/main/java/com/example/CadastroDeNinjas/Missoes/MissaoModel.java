@@ -4,8 +4,8 @@ import com.example.CadastroDeNinjas.Ninjas.NinjaModel;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "tb_missao")
-public class MissoesModel {
+@Table(name = "tb_missoes")
+public class MissaoModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,10 +14,10 @@ public class MissoesModel {
     private String dificuldade;
     private NinjaModel ninja;
 
-    public MissoesModel() {
+    public MissaoModel() {
     }
 
-    public MissoesModel(String nome, String dificuldade) {
+    public MissaoModel(String nome, String dificuldade) {
         this.nome = nome;
         this.dificuldade = dificuldade;
     }

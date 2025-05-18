@@ -1,6 +1,6 @@
 package com.example.CadastroDeNinjas.Ninjas;
 
-import com.example.CadastroDeNinjas.Missoes.MissoesModel;
+import com.example.CadastroDeNinjas.Missoes.MissaoModel;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -15,7 +15,7 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
-    private List<MissoesModel> missoes;
+    private List<MissaoModel> missoes;
 
     public NinjaModel() {
     }
