@@ -18,6 +18,7 @@ public class NinjaModel {
 
     //@ManyToOne um ninja pode ter apenas uma missão
     @ManyToOne
+    @JoinColumn(name = "missao_id")
     private MissaoModel missao;
 
     private List<MissaoModel> missoes;
