@@ -15,6 +15,11 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
+
+    //@ManyToOne um ninja pode ter apenas uma missão
+    @ManyToOne
+    private MissaoModel missao;
+
     private List<MissaoModel> missoes;
 
     public NinjaModel() {
